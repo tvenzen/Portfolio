@@ -1,38 +1,421 @@
+body{
+  /*background-image: linear-gradient(#265077, #022140); */
+  /* background-color: #1E4258; */
+  background-color: #002140;
+
+  
+}
+
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.siteButton{
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  background-color: #1E4258;
+  margin: 0 20px;
+  padding: 12px 30px;
+  transition: .5s ease-out;
+  border-radius: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.siteButton:hover{
+  color: #002140;
+  background-color: white;
+  border-style: solid;
+  border-color:white;
+  border-radius: 20px;
+
+}
+
+
+
+#intro{
+    color: white;
+    /* background-color: #002140; */
+    background-color: #1E4258;
+    }
+    #intro nav{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      }
+      #intro nav h1{
+        padding-left: 1em;
+        padding-right: 1em;
+      }
+
+#navbar{
+   /*border-style: solid;*/
+   border-color: white;
+   border-right-style: none;
+   border-left-style: none;
+   /* background-color: #002140; */
+   background-color: #1E4258;
+   height: 50px;
+   padding: 12px;
+   margin: 35px 80px;
+   border-radius: 30px;
   }
-  to {
-    transform: rotate(360deg);
+
+  #navbar nav{
+    height: 50px;
+  }
+
+  #navbar .siteButton{
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    background-color: #1E4258;
+    margin: 0 20px;
+    padding: 12px 30px;
+    transition: .5s ease-out;
+    border-radius: 30px;
+  }
+
+  #navbar .siteButton:hover{
+    color: #002140;
+    background-color: white;
+    border-style: solid;
+    border-color:white;
+    border-radius: 30px;
+  }
+
+  /*
+  #navbar button{
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    background-color: #1E4258;
+    margin: 0 20px;
+    padding: 12px 30px;
+    transition: .5s ease-out;
+
+  } */
+
+  /*
+  #navbar button:hover{
+    background-color:#1E4258; 
+    color:white;
+    color: #002140;
+    background-color: white;
+    border-style: solid;
+    border-color:white;
+    border-radius: 20px;
+    box-shadow: -4px 100px 31px -27px white; 
+    
+  }
+
+  */
+  #navbar a{
+    color: white;
+    margin: 0 20px;
+    transition: .5s ease-out;
+    border-radius: 30px;
+    }
+  #navbar a:hover{
+   /* background-color:#1E4258; 
+    color:white; */
+    color: #002140;
+    background-color: white;
+    border-color: white;
+    border-style: solid;
+    border-radius: 30px;
+  }
+    
+  
+  #navbar a:link, a:visited{
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    
+    padding: 12px 24px;
+  }
+
+
+#profile {
+  display: flex;
+  /* flex-flow: column wrap; */
+  position: relative;
+  /* background-color: #1E4258; */
+  background-color: #002140;
+ /* padding-bottom: 20em; */
+  flex-direction: column;
+  }
+  #profile .sideBySide{
+    display: flex;
+    position: relative;
+    flex-flow: row wrap;
+    width: 50vw;
+    align-self: center;
+    background-color: #1E4258;
+    padding: 0 10vw;
+    border-radius: 30px;
+  }
+  #profile .myPic{
+    border: white;
+    border-style: ridge;
+    border-width: 5px;
+    border-radius: 50%;
+    margin: 3em auto;
+    display: block;
+   /* margin-left: 5em; */
+    
+    position: relative;
+  }
+  #profile p{
+    position: relative;
+    /* top:129px; */
+    font-size: 37px;
+  }
+
+  .contentBox{
+    border-radius: solid;
+    padding: 3vw 2vw;
+    border-radius: 20px;
+    background-color: white;
+    border-color: white;
+    color: #002140;
+    width: 44vw;
+    box-shadow: 0 0 30px;
+  }
+
+  .languageTag{
+    border-radius: solid;
+    padding: 15px;
+    margin: 7px;
+    border-radius: 40px;
+    background-color: rgb(12, 109, 141);
+    border-color: rgb(12, 109, 141);
+    color: white;
+    /*
+    position: relative;
+    bottom: 35;
+    left: 85vw;
+    width: 4vw; */
+  }
+
+  .tagHolder{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    bottom: 25px;
+  }
+
+  .tagHolder li{
+    margin: 0;
+  }
+
+  .lists{
+    text-align: left;
+    /* border-style: solid; */
+    border-width: 5px;
+    border-color: white;
+    border-left: none;
+    border-right: none;
+    }
+    .lists .rowFlex{
+      display: flex;
+      position: relative;
+      flex-direction: row;
+      justify-content: center;
+    }
+    .lists .colFlex{
+      display: flex;
+      position: relative;
+      flex-direction: column;
+      padding-left: 7em;
+      padding-right: 7em;
+    }
+    .lists ul{
+      list-style-type: none;
+      background-color: #1E4258;
+      width: 70vw;
+      
+      padding: 10vh 0;
+      border-radius: 30px;
+      display: block;
+      margin: 3em auto;
+    }
+    .lists h2{
+      text-align: center;
+    }
+    .lists li{
+        margin: 0px 11vw;
+        font-size: 20px;
+        /* padding: 0px; */
+    }
+    .lists .projectTitle{
+      text-align: center;
+    }
+
+    .lists a:link, a:visited{
+      
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 20px;
+      padding: 0 .5em .25em .5em;
+      background-color: #1E4258;
+    
+    }
+
+    .lists a:hover{
+      background-color: white;
+    }
+
+    .contactForm {
+      color: white;
+    }
+
+    .contactForm  form{
+      display: flex;
+      flex-direction: column;
+      font-size: 25px;
+      margin: 10vh 20vw;
+      background-color: #1E4258;
+      border-radius: 40px;
+      padding: 7vh 0;
+
+
+    }
+
+    .contactForm input{
+      border: none;
+      background: inherit;
+      color: white;
+      font-size: 20px;
+      margin: 1vh 0;
+      width: 17vw;
+      align-self: center;
+    }
+
+    .contactForm hr{
+      align-self: center;
+      width: 17vw;
+      position: relative;
+      bottom: 10px;
+      margin: 1vh 0 5vh 0;
+    }
+
+    .contactForm textarea{
+      align-self: center;
+      width: 45vw;
+      height: 20vh;
+      background: inherit;
+      border: none;
+      color: white;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 20px;
+      margin: 1vh 0;
+    }
+
+    .contactForm #textAreaUnderline{
+      width: 45vw;
+    }
+
+    .contactForm #submitButton{
+      align-self: center;
+      width: 10vw;
+      border-radius: 30px;
+    }
+
+@media only screen and (max-width: 1280px){
+
+  #navbar .siteButton {
+    
+    font-size: 16px;
+    
+  }
+
+  #navbar a:link, a:visited{
+    font-size: 16px;
+  }
+
+}
+
+@media only screen and (max-width: 1024px){
+
+  #navbar .siteButton{
+    margin: 0px 5px;
+    font-size: 15px;
+  }
+
+  
+
+  #navbar a:link, a:visited{
+    font-size: 15px;
+    margin: 0 3px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    
+    padding: 12px 24px;
+  }
+}
+
+@media only screen and (max-width: 768px){
+
+  #navbar .siteButton {
+    margin: 0px 5px;
+    font-size: 12px;
+    padding: 12px 10px;
+  }
+
+  #navbar a:link, a:visited{
+    font-size: 12px;
+    padding: 12px 15px
+  }
+
+}
+
+@media only screen and (max-width: 420px){
+  #navbar{
+    display:flex;
+    flex-flow: column;
+    padding-bottom: 25vh;
+  }
+
+  #navbar nav {
+    display: contents;
+  }
+
+  #profile p{
+    font-size: 20px;
+  }
+
+  #profile .myPic{
+    width: 100%;
+    height: 1%
+  }
+
+  .contactForm label{
+    font-size: 20px;
+  }
+
+  .contactForm hr{
+    width: 25vw;
+  }
+
+  .contactForm input{
+    width: 25vw;
+    font-size: 20px;
+  }
+
+  .contactForm #submitButton{
+    position: relative;
+    right: 6vw;
   }
 }
